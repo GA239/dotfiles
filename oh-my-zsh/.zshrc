@@ -21,7 +21,12 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git python )
+plugins=(git python aliases dbt git-auto-fetch history pipenv pre-commit pyenv vscode)
+
+# Choose between one [code, code-insiders, codium, or cursor]
+# The following line will make the plugin to open VS Code Insiders
+# Invalid entries will be ignored, no aliases will be added
+VSCODE=code
 
 source $ZSH/oh-my-zsh.sh
 
